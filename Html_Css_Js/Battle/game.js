@@ -1,0 +1,1 @@
+document.getElementById('tela').write("im here")

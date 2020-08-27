@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(75, 9, 228)
+}div#area{
+    background-color: chocolate;
+    font: normal 20px Arial;
+    color: antiquewhite;
+    width: 400px;
+    length: 400px
+}

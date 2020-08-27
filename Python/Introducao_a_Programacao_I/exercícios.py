@@ -1,0 +1,26 @@
+print('Ex 04 --- Soma, subtração e multiplicação')
+num1 = int(input('Digite um número inteiro: '))
+num2 = int(input('Digite outro número inteiro: '))
+print(f'Dos números {num1} e {num2}:\nA soma: {num1+num2}\nA subtração: {num1 - num2}\nA multiplicação: {num1 * num2}\n')
+
+print('Ex 05 --- Antecessor & Sucessor')
+num = int(input('Digite um número inteiro: '))
+print(f'O antecessor de {num} é {num - 1}\nO sucessor de {num} é {num + 1}\n')
+
+print('Ex 06 --- Retângulo')
+base = float(input('Digite a base de um retângulo: '))
+alt = float(input('Digite a altura de um retângulo: '))
+print(f'Para um retângulo de {base}x{alt}:\nO perímetro é: {2*base+2*alt}\nA área é: {base*alt}\n')
+
+print('Ex 07 --- Média ponderada')
+n1 = float(input('Digite a nota de peso 1: '))
+n2 = float(input('Digite a nota de peso 2: '))
+n3 = float(input('Digite a nota de peso 3: '))
+n4 = float(input('Digite a nota de peso 4: '))
+print(f'A média ponderada dos números que digitou é: {(n1*1+n2*2+n3*3+n4*4)/(1+2+3+4)}\n')
+
+print('Ex 08 --- Prestação')
+c = float(input('Digite o valor a pagar: '))
+i = float(input('Digite a taxa de juros ao mês (em porcentagem): '))
+t = float(input('Digite a quantidade de meses de atraso: '))
+print(f'Pelas minhas contas, você pagará: {c+(c*i*t/100)}')

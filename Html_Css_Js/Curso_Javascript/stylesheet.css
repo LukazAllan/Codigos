@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(75, 9, 228);
+}
+
+div#b1 {
+    background-color: chocolate;
+    font: normal 20px Verdana;
+    color: antiquewhite;
+    width: 100px;
+    length: 100px;
+    line-height: 100px;
+    text-align: center;
+}

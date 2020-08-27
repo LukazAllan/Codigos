@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TQGKT9H');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="https://precodoscombustiveis.com.br/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="kdpUUcZgO9IHJHWUg53Lvq4WhM8ef5r5EyykvHnC">
+
+<title>Preço dos combustíveis - Gaspass</title>
+<meta name="description" content="Confira o pre&ccedil;o dos combust&iacute;veis (gasolina, &aacute;lcool, diesel) no Brasil. Valor por litro em reais. Veja os postos no mapa ou navegue atrav&eacute;s da lista.">
+<meta name="keywords" content="preço, combustíveis, gasolina, álcool, diesel, brasil, estados, cidades, postos, bairros, litro, litros, real, reais">
+<meta name="theme-color" content="#161825">
+<meta property="og:title" content="Preço dos combustíveis - Gaspass" />
+<meta property="og:description" content="Confira os pre&ccedil;o dos combust&iacute;veis na sua localidade" />
+<meta property="og:url" content="https://precodoscombustiveis.com.br" />
+<meta property="og:image" content="https://api.gaspass.com.br/assets/img/cover.png" />
+
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gaspassfuel" />
+    <meta name="twitter:creator" content="@gaspassfuel" />
+    <meta name="twitter:image" content="https://precodoscombustiveis.com.br/img/gaspass_marca.png"/>
+
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113363189-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113363189-1');
+    </script>
+
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1511531556004960",
+    enable_page_level_ads: true
+    });
+    </script> -->
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+    
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+    
+
+    <script src="https://www.gstatic.com/firebasejs/ui/3.5.2/firebase-ui-auth__pt_br.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAa6umHHsUUEL8J4rj8iqf6z0_YTG6OkjU",
+            authDomain: "preco-dos-combustiveis.firebaseapp.com",
+            databaseURL: "https://preco-dos-combustiveis.firebaseio.com",
+            projectId: "preco-dos-combustiveis",
+            storageBucket: "preco-dos-combustiveis.appspot.com",
+            messagingSenderId: "985319645233"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+    <script type="text/javascript">
+        // FirebaseUI config.
+        var uiConfig = {
+            signInSuccessUrl: 'https://precodoscombustiveis.com.br/pt-BR',
+            signInOptions: [
+                // Leave the lines as is for the providers you want to offer your users.
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.FacebookAuthProvider.PROVIDER_ID/*,
+                firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+                firebase.auth.GithubAuthProvider.PROVIDER_ID,
+                firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+                firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID*/
+            ],
+            // tosUrl and privacyPolicyUrl accept either url string or a callback
+            // function.
+            // Terms of service url/callback.
+            tosUrl: 'https://precodoscombustiveis.com.br/user-terms',
+            // Privacy policy url/callback.
+            privacyPolicyUrl: function() {
+                window.location.assign('https://precodoscombustiveis.com.br/privacy-politics');
+            }
+        };
+
+        // Initialize the FirebaseUI Widget using Firebase.
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        // The start method will wait until the DOM is loaded.
+        // ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+
+    
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script type="text/javascript">
+        initApp = function() {
+            firebase.auth().onAuthStateChanged(function(user) {
+                if (user) {
+                    // User is signed in.
+                    var displayName = user.displayName;
+                    var email = user.email;
+                    var emailVerified = user.emailVerified;
+                    var photoURL = user.photoURL;
+                    var uid = user.uid;
+                    var phoneNumber = user.phoneNumber;
+                    var providerData = user.providerData;
+                    user.getIdToken().then(function(accessToken) {
+                        if (document.getElementById('sign-in-status')) {
+                            document.getElementById('sign-in-status').textContent = 'Signed in';
+                        }
+                        if (document.getElementById('sign-in')) {
+                            document.getElementById('sign-in').textContent = 'Sign out';
+                        }
+                        if (document.getElementById('account-details')) {
+                            document.getElementById('account-details').textContent = JSON.stringify({
+                                displayName: displayName,
+                                email: emailauth
+                            }, null, '  ');
+                        }
+                    });
+                } else {
+                    // User is signed out.
+                    /*document.getElementById('sign-in-status').textContent = 'Signed out';
+                    document.getElementById('sign-in').textContent = 'Sign in';
+                    document.getElementById('account-details').textContent = 'null';*/
+                }
+            }, function(error) {
+                console.log(error);
+            });
+        };
+
+        window.addEventListener('load', function() {
+            initApp()
+        });
+    </script>
+
+
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c4219a180b4ba001b1ee240&product=inline-share-buttons"></script>
+
+    <link href="https://precodoscombustiveis.com.br/css/app.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/png" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png"/>
+
+    <!-- Theme style -->
+    
+<!-- Google Font: Source Sans Pro -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    
+    
+
+    <link rel="apple-touch-icon" sizes="76x76" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png">
+    <link rel="icon" type="image/png" href="https://precodoscombustiveis.com.br/img/gaspass_marca.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- CSS Files -->
+    
+    <link href="https://precodoscombustiveis.com.br/css/now-ui-kit.min.pro.css" rel="stylesheet" />
+    <link href="https://precodoscombustiveis.com.br/css/now-ui-kit.css?v=1.2.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    
+
+    <link href="https://precodoscombustiveis.com.br/css/gaspass.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .speech-bubble {
+            position: relative;
+            background: #f2ae07;
+            border-radius: .4em;
+        }
+
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border: 26px solid transparent;
+            border-right-color: #f2ae07;
+            border-left: 0;
+            border-top: 0;
+            margin-top: -13px;
+            margin-left: -26px;
+        }
+        .feedback {
+            background-color : #fdb808;
+            color: #111;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border-color: #e4a306;
+        }
+
+        #mybutton {
+            position: fixed;
+            /*bottom: -4px;*/
+            top: 45%;
+            left: 10px;
+            z-index: 999;
+        }
+        @media( max-width: 700px){
+            #mybutton {
+                display: none;
+                position: fixed;
+                /*bottom: -4px;*/
+                top: 45%;
+                left: 10px;
+                z-index: 999;
+            }
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #333 !important;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #333 !important;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #333 !important;
+        }
+    </style>
+
+    </head>
+
+<body class="index-page sidebar-collapse">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQGKT9H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="200">
+    
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand d-flex flex-row justify-content-center" href="/pt-BR" id="logo">
+                <img src="https://precodoscombustiveis.com.br/img/logo.svg" />
+                <span class="color-accent align-self-center ml-3" style="text-transform: none"><b>Preço dos</b>&nbsp;Combustíveis</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar top-bar"></span>
+                <span class="navbar-toggler-bar middle-bar"></span>
+                <span class="navbar-toggler-bar bottom-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+            <ul class="navbar-nav">
+                
+                
+                
+                
+                
+                <div id="sign-in_custom">
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://precodoscombustiveis.com.br/login">
+                            <i class="now-ui-icons users_single-02"></i>
+                            Entrar
+                        </a>
+                    </li>
+                </div>
+                <div id="sign-out_custom">
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <span id="username"></span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            
+                            <a href="#" class="dropdown-item  disabled" title="Em Construção" alt="Em Construção" disabled style="">Painel</a>
+                            <a href="#" class="dropdown-item  disabled" title="Em Construção" alt="Em Construção" disabled style="">Perfil</a>
+                            <a class="dropdown-item mouse-hover" onclick="logout()">Sair</a>
+
+                            
+                        </div>
+                    </li>
+                </div>
+                
+
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+                        
+                                                    <p>Portugues</p>
+                                                </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+                        <a class="dropdown-item mouse-hover" onclick="setLocale('en')">
+                            Inglês
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setLocale('es')">
+                            Espanhol
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setLocale('pt-BR')">
+                            Portugues
+                        </a>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link mouse-hover" onclick="toggleMenuSearchBox()">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+                                <li class="nav-item">
+                    <a class="nav-link" title="Baixe o app Android" data-placement="bottom" href="https://play.google.com/store/apps/details?id=br.com.precodoscombustiveis.pdc" target="_blank">
+                        <i class="fab fa-android"></i>
+                        <p class="d-lg-none d-xl-none">Android</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Baixe o app iOS" data-placement="bottom" href="https://itunes.apple.com/br/app/gaspass/id1438985142" target="_blank">
+                        <i class="fab fa-apple"></i>
+                        <p class="d-lg-none d-xl-none">Apple</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Siga-nos!" data-placement="bottom" href="https://twitter.com/precombustiveis" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        <p class="d-lg-none d-xl-none">Twitter</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Curta nossa página!" data-placement="bottom" href="https://facebook.com/gaspassfuel" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                        <p class="d-lg-none d-xl-none">Facebook</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" title="Confira!" data-placement="bottom" href="https://instagram.com/gaspassfuel" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <p class="d-lg-none d-xl-none">Instagram</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-placement="bottom" href="https://blog.gaspass.com.br/" target="_blank">
+                        <img style="width:16px;" src="https://precodoscombustiveis.com.br/img/icones__gaspass_iconeRegularBlack-duvida.svg" />
+                        &nbsp;&nbsp;Ajuda
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+    <script>
+
+        var loged = 0;
+        /*-Firebase-*/
+        firebase.auth().onAuthStateChanged(function(u) {
+            console.log('auth menu');
+            if (u) {
+                user = u;
+                // console.log(user);
+                $('#sign-in_custom').hide();
+                $('#sign-out_custom').show();
+                if(user.photoURL != null){
+                    $('#username').html('<img src="'+user.photoURL+'" style="border-radius:50%; width:30px; height:30px;">&nbsp;&nbsp;&nbsp;'+user.displayName.substring(0,25));
+                    $('#picturephotouser').attr('src',''+user.photoURL+'');
+                }else{
+                    $('#username').html(user.displayName.substring(0,25));
+                    $('#picturephotouser').attr('src','https://precodoscombustiveis.com.br/images/placeholder_user.jpg');
+                }
+                if(user.displayName.length > 25) $('#username').append("...");
+                /*$('#containerSearch').addClass('col-md-5');*/
+                /*$('#containerSearch').removeClass('col-md-6');*/
+                var c = "";
+                if(user.photoURL != null) c += '<img src="'+user.photoURL+'" style="border-radius:50%; width:52px; height:52px; margin-bottom:10px;"><br>';
+                c += '<b>'+user.displayName+'</b><br>'+user.email;
+                /*$('#username2').html(c);*/
+                user.getIdToken().then(function(datawithtoken) {
+                    // console.log(datawithtoken);
+                    var settings = {
+                        "async": true,
+                        "crossDomain": true,
+                        "url": "https://api.gaspass.com.br/v2/login",
+                        "method": "GET",
+                        "headers": {
+                            "Authorization": "Basic "+btoa(datawithtoken+':'),
+                            "cache-control": "no-cache",
+                            "Postman-Token": "12370737-5d05-42ae-8438-a3fb66a2aa24"
+                        }
+                    }
+
+                    $.ajax(settings).done(function (response) {
+                        loged = 1;
+                        console.log('logged');
+                        // console.log(response);
+                    });
+                });
+                $('#form_postcomment').show();
+            } else {
+                console.log("no user");
+                $('#form_postcomment').hide();
+                loged = 0;
+            }
+        });
+
+        function logout(){
+            firebase.auth().signOut();
+            //location.reload();
+            user = null;
+            console.log(user);
+            $('#sign-in_custom').show();
+            $('#sign-out_custom').hide();
+            $('#username').html("");
+            /*$('#containerSearch').removeClass('col-md-5');*/
+            /*$('#containerSearch').addClass('col-md-6');*/
+            /*$('#username2').html("");*/
+        }
+
+
+        // var x = document.getElementById("myLink").disabled;
+        var y = document.getElementsByClassName('disabled').disabled;
+    </script><div id="mybutton">
+    <!-- <button class="feedback">Feedback</button> -->
+    <button type="button" class="btn btn-warning shadow text-black" data-toggle="modal" data-target="#exampleModal_feedback">
+        Feedback
+    </button>
+</div>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm" id="exampleModal_feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Gostou do novo site?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal_feedback_body">
+                <p>Diga como está sua experiencia.</p>
+                <form>
+                    <div class="form-group">
+                        
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu Email">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputNota">Nota</label><br>
+                        <i class="far fa-star" id="star_1"></i>
+                        <i class="far fa-star" id="star_2"></i>
+                        <i class="far fa-star" id="star_3"></i>
+                        <i class="far fa-star" id="star_4"></i>
+                        <i class="far fa-star" id="star_5"></i>
+                    </div>
+                    <div class="form-group">
+                        
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Comentário</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btn_close_feedback" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" id="btn_submit_feedback" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="wrapper pb-5" id="ListCountry">
+
+        <div class="page-header page-header-small" style="min-height:20vh; max-height:300px; transition: 0.5s;">
+    <div class="page-header-image" data-parallax="true" style="background: url(https://precodoscombustiveis.com.br/img/gasbg.jpg); box-shadow: inset 0 0 0 1000px rgba(22,24,37,.8); transform: translate3d(0px, 0px, 0px);"></div>
+    <div class="content-center" style="max-width: 100%;">
+
+        <div class="container" id="dowloadAppBox">
+            <h3 class="title">Baixe o app</h3>
+            <div class="text-center">
+                <a href="https://play.google.com/store/apps/details?id=br.com.precodoscombustiveis.pdc" class="btn btn-success btn-round" target="_blank">
+                    <i class="fab fa-android fa-3x"></i>
+                </a>
+                <a href="https://itunes.apple.com/br/app/gaspass/id1438985142" class="btn btn-info btn-round" target="_blank">
+                    <i class="fab fa-apple fa-3x"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="container mt-2" id="menuSearchBox" style="display:none;">
+            <div class="offset-md-2 col-md-8 offset-1 col-10">
+    <div class="card card-raised card-form-horizontal card-plain" data-background-color>
+        <div class="card-body">
+
+            <div class="row" id="searchContainer">
+                <div class="col-md-12 d-flex flex-column align-items-end d-md-flex flex-md-row">
+                    <span class="fa fa-circle-notch fa-spin" id="searchLoading" style="display:none; position:absolute;left:35px;"></span>
+                    <input type="text" value="" id="HomeHeaderInput"  placeholder="Pesquise países, estados, cidades..."  class="form-control" autocomplete="family-name" />
+                    <a href="#" class="dropdown-toggle show d-none d-md-flex align-items-center justify-content-center mr-0 mr-md-5" id="HomeHeaderFuelDropdown" data-toggle="dropdown" aria-expanded="false">
+                                                    Gasolina
+                                                </a>
+                    <div class="dropdown-menu" aria-labelledby="HomeHeaderFuelDropdown">
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('1', this.text)">
+                            Gasolina
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('2', this.text)">
+                            Etanol
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('3', this.text)">
+                            Diesel
+                        </a>
+                        <a class="dropdown-item mouse-hover" onclick="setFuel('4', this.text)">
+                            Gnv
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div id="searchMessage" style="display:none;padding-top:30px;"></div>
+                    
+
+                    <div id="autocomplete" style="display:none;max-height:300px;overflow-y:auto;">
+                        <div class="row">
+                            <div class="col-md-4" id="autocompleteDivCity">
+                                <table class="table table-borderless">
+                                    <thead><th class="text-left">Cidade</th></thead>
+                                    <tbody id="autocompleteTableCity"></tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-4" id="autocompleteDivState">
+                                <table class="table table-borderless">
+                                    <thead><th class="text-left">Estado</th></thead>
+                                    <tbody id="autocompleteTableState"></tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-4" id="autocompleteDivCountry">
+                                <table class="table table-borderless">
+                                    <thead><th class="text-left">País</th></thead>
+                                    <tbody id="autocompleteTableCountry"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+</div>
+
+        <div class="row pt-3">
+            <div class="offset-xl-1 col-xl-10 col-12">
+                                                        <nav aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item " ><a href="https://precodoscombustiveis.com.br/pt-BR">Home</a></li>
+                            <li class="breadcrumb-item " ><a href="https://precodoscombustiveis.com.br/pt-BR/country/Brasil/33">Brasil</a></li>
+                            <li class="breadcrumb-item " ><a href="https://precodoscombustiveis.com.br/pt-BR/state/Brasil/Paraiba/15">Paraíba</a></li>
+                            <li class="breadcrumb-item  active" aria-current="page">João Pessoa </li>
+                        </ol>
+</nav>                            </div>
+                            <div class="offset-xl-1 col-xl-10 col-12 px-0" style="min-height: 100px;">
+                    <!-- newgaspass -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1511531556004960"
+     data-ad-slot="5753030534"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<style type="text/css">
+	ins.adsbygoogle {
+    	height: 100px;
+	}
+</style>
+
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1511531556004960"
+    });
+    </script>
+                </div>
+                    </div>
+
+        <div class="row">
+
+            <div class="offset-xl-1 col-xl-7 col-12">
+
+                <div class="card card-profile mt-1">
+
+                    <div class="card-body mt-0 pb-5">
+                        <h3 class="mb-4">João Pessoa</h3>
+
+                                                    <div class="row">
+                                                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/aeroclube/9682" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Aeroclube" title="Aeroclube">
+                                                 Aeroclube  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">3</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/agua-fria/971" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Água Fria" title="Água Fria">
+                                                 Água Fria  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/alto-do-mateus/9370" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Alto do Mateus" title="Alto do Mateus">
+                                                 Alto do Mateus  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">3</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bairro-das-industrias/5707" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bairro das Industrias" title="Bairro das Industrias">
+                                                 Bairro das I...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bairro-dos-estados/973" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bairro dos Estados" title="Bairro dos Estados">
+                                                 Bairro dos E...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">8</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bairro-dos-ipes/980" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bairro dos Ipês" title="Bairro dos Ipês">
+                                                 Bairro dos I...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">4</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bairros-das-industrias/20549" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bairros das Industrias" title="Bairros das Industrias">
+                                                 Bairros das ...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bancarios/5708" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bancários" title="Bancários">
+                                                 Bancários  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">4</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bessa/36622" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bessa" title="Bessa">
+                                                 Bessa  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/bessa/989" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Bessa" title="Bessa">
+                                                 Bessa  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">8</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/brisamar/10120" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Brisamar" title="Brisamar">
+                                                 Brisamar  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/cabo-branco/5709" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Cabo Branco" title="Cabo Branco">
+                                                 Cabo Branco  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/castelo-branco/978" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Castelo Branco" title="Castelo Branco">
+                                                 Castelo Branco  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/castelo-branco-i/8088" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Castelo Branco I" title="Castelo Branco I">
+                                                 Castelo Bran...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/centro/982" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Centro" title="Centro">
+                                                 Centro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">8</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/centro/12408" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Centro" title="Centro">
+                                                 Centro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/cidade-dos-colibris/984" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Cidade dos Colibris" title="Cidade dos Colibris">
+                                                 Cidade dos C...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">4</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/cj_-dos-bancarios/994" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Cj. dos Bancarios" title="Cj. dos Bancarios">
+                                                 Cj. dos Banc...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/conjunto-ernesto-geisel/5706" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Conjunto Ernesto Geisel" title="Conjunto Ernesto Geisel">
+                                                 Conjunto Ern...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/costa-e-silva/11442" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Costa e Silva" title="Costa e Silva">
+                                                 Costa e Silva  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/cristo-redentor/22014" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Cristo Redentor" title="Cristo Redentor">
+                                                 Cristo Redentor  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/cristo-redentor/969" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Cristo Redentor" title="Cristo Redentor">
+                                                 Cristo Redentor  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">7</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/cruz-das-armas/983" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Cruz das Armas" title="Cruz das Armas">
+                                                 Cruz das Armas  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">6</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/dist_-industrial/9788" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Dist. Industrial" title="Dist. Industrial">
+                                                 Dist. Indust...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/distrito-industrial/20563" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Distrito Industrial" title="Distrito Industrial">
+                                                 Distrito Ind...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/distrito-industrial/10437" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Distrito Industrial" title="Distrito Industrial">
+                                                 Distrito Ind...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">5</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/distrito-industrial/36643" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Distrito Industrial" title="Distrito Industrial">
+                                                 Distrito Ind...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/dos-estados/974" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="dos Estados" title="dos Estados">
+                                                 dos Estados  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">3</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/ernani-satyro/990" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Ernani Satyro" title="Ernani Satyro">
+                                                 Ernani Satyro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/estados/8087" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Estados" title="Estados">
+                                                 Estados  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/funcionarios-i/7777" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Funcionários I" title="Funcionários I">
+                                                 Funcionários I  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/funcionarios-ii/5705" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Funcionários Ii" title="Funcionários Ii">
+                                                 Funcionário...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/geisel/7778" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Geisel" title="Geisel">
+                                                 Geisel  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">4</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/ilha-do-bispo/10555" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Ilha do Bispo" title="Ilha do Bispo">
+                                                 Ilha do Bispo  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/ipes/9817" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Ipes" title="Ipes">
+                                                 Ipes  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jaguaribe/977" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Jaguaribe" title="Jaguaribe">
+                                                 Jaguaribe  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">11</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jardim-agua-fria/991" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Jardim Água Fria" title="Jardim Água Fria">
+                                                 Jardim Água...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jardim-cidade-universitaria/993" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Jardim Cidade Universitária" title="Jardim Cidade Universitária">
+                                                 Jardim Cidad...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">4</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jardim-cidade-universitaria/38895" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Jardim Cidade Universitária" title="Jardim Cidade Universitária">
+                                                 Jardim Cidad...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jd-cidade-universita/11785" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Jd Cidade Universita" title="Jd Cidade Universita">
+                                                 Jd Cidade Un...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/joao-paulo-ii/9880" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="João Paulo Ii" title="João Paulo Ii">
+                                                 João Paulo Ii  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jose-americo/5704" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="José Américo" title="José Américo">
+                                                 José Américo  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">4</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/jose-americo-de-almeida/38533" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="José Américo de Almeida" title="José Américo de Almeida">
+                                                 José Améri...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/manaira/987" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Manaira" title="Manaira">
+                                                 Manaira  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">7</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/mandacaru/975" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Mandacaru" title="Mandacaru">
+                                                 Mandacaru  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/mangabeira/968" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Mangabeira" title="Mangabeira">
+                                                 Mangabeira  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">5</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/mangabeira-i/5702" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Mangabeira I" title="Mangabeira I">
+                                                 Mangabeira I  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/mares/10433" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Mares" title="Mares">
+                                                 Mares  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/miramar/988" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Miramar" title="Miramar">
+                                                 Miramar  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/monsenhor-magno/10438" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Monsenhor Magno" title="Monsenhor Magno">
+                                                 Monsenhor Magno  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/mucumagro/11633" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Mucumagro" title="Mucumagro">
+                                                 Mucumagro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/oitizeiro/5703" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Oitizeiro" title="Oitizeiro">
+                                                 Oitizeiro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/paratibe/981" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Paratibe" title="Paratibe">
+                                                 Paratibe  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/portal-do-sol/986" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Portal do Sol" title="Portal do Sol">
+                                                 Portal do Sol  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/rangel/970" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Rangel" title="Rangel">
+                                                 Rangel  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">3</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/tambau/992" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Tambaú" title="Tambaú">
+                                                 Tambaú  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">7</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/tambauzinho/967" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Tambauzinho" title="Tambauzinho">
+                                                 Tambauzinho  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">15</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/tambia/976" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Tambiá" title="Tambiá">
+                                                 Tambiá  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">5</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/torre/972" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Torre" title="Torre">
+                                                 Torre  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">20</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/valentina/10020" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Valentina" title="Valentina">
+                                                 Valentina  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/valentina-de-figueiredo/37756" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Valentina de Figueiredo" title="Valentina de Figueiredo">
+                                                 Valentina de...&nbsp; &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/vardouro/985" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Vardouro" title="Vardouro">
+                                                 Vardouro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">2</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/varjao/36721" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Varjão" title="Varjão">
+                                                 Varjão  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                                                                <div class="col-12 col-xl-3 col-md-6 justify-content-center station-hover" style="height:32px;">
+                                            <a href="https://precodoscombustiveis.com.br/pt-br/district/brasil/paraiba/joao-pessoa/viradouro/7703" style="width:100%;" class="list-item d-flex align-items-center justify-content-center" alt="Viradouro" title="Viradouro">
+                                                 Viradouro  &nbsp;&nbsp;<span class="bagde badge-pill badge-dark" style="font-size:10px;">1</span>
+                                            </a>
+                                        </div>
+                                                                                                </div>
+                                <div class="row">
+                                    <div class="mt-5 p-2 justify-content-center color-primary">
+                                    
+                                </div>
+                            </div>
+                                            </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 p-5 pr-md-5 pl-md-4 pt-md-2">
+                <h5 class="text-muted">Índice de preços Gaspass</h5>
+                <div class="card">
+        <div class="card-body" style="background:#f5f5f5">
+            <span class="category text-danger">Gasolina</span><br>
+            <span class="text-muted">Preço médio nos últimos 15 dias <br>em <b>João Pessoa</b></span><br>
+            <span style="font-size:28px;">R$ 4.062</span>
+                            <p class="text-justify hover" style="text-justify:inter-word; min-height: 15px;"> <a href="https://precodoscombustiveis.com.br/pt-br/station/brasil/paraiba/joao-pessoa/district/posto-extra-j-pessoa-lj-2638/16554" alt="Ir para o posto Posto Extra J Pessoa Lj 2638" title="Ir para o posto Posto Extra J Pessoa Lj 2638"> <span class="text-muted text-left float-left" style=" ">Menor preço:</span><span class="text-success text-right float-right font-weight-normal" style="font-size:18px;">R$ 3.799</span> </a> </p>
+                <p class="text-justify hover" style="text-justify:inter-word; min-height: 15px;"> <a href="https://precodoscombustiveis.com.br/pt-br/station/brasil/paraiba/joao-pessoa/district/posto-quality-beira-rio/1514" alt="Ir para o posto Posto Quality Beira Rio" title="Ir para o posto Posto Quality Beira Rio">  <span class="text-muted text-left float-left" style=" ">Maior preço:</span><span class="text-danger text-right float-right font-weight-normal" style="font-size:18px;">R$ 4.400</span> </a> </p>
+                        <br />
+        </div>
+    </div>
+                <div class="card">
+        <div class="card-body" style="background:#f5f5f5">
+            <span class="category text-success">Etanol</span><br>
+            <span class="text-muted">Preço médio nos últimos 15 dias <br>em <b>João Pessoa</b></span><br>
+            <span style="font-size:28px;">R$ 3.239</span>
+                            <p class="text-justify hover" style="text-justify:inter-word; min-height: 15px;">  <a href="https://precodoscombustiveis.com.br/pt-br/station/brasil/paraiba/joao-pessoa/district/posto-automix/15567" alt="Ir para o posto Posto Automix" title="Ir para o posto Posto Automix"> <span class="text-muted text-left float-left" style=" ">Menor preço:</span><span class="text-success text-right float-right font-weight-normal" style="font-size:18px;">R$ 3.083</span> </a> </p>
+                <p class="text-justify hover" style="text-justify:inter-word; min-height: 15px;">  <a href="https://precodoscombustiveis.com.br/pt-br/station/brasil/paraiba/joao-pessoa/district/pichilau-cristo-redentor-joao-pessoa/9557" alt="Ir para o posto Pichilau Cristo Redentor Joao Pessoa" title="Ir para o posto Pichilau Cristo Redentor Joao Pessoa"> <span class="text-muted text-left float-left" style=" ">Maior preço:</span><span class="text-danger text-right float-right font-weight-normal" style="font-size:18px;">R$ 3.499</span> </a> </p>
+                        <br />
+        </div>
+    </div>
+                <div class="card">
+        <div class="card-body" style="background:#f5f5f5">
+            <span class="category text-warning">Diesel</span><br>
+            <span class="text-muted">Preço médio nos últimos 15 dias <br>em <b>João Pessoa</b></span><br>
+            <span style="font-size:28px;">R$ 3.600</span>
+                            <p class="text-justify hover" style="text-justify:inter-word; min-height: 15px;">  <a href="https://precodoscombustiveis.com.br/pt-br/station/brasil/paraiba/joao-pessoa/district/posto-extra-j-pessoa-lj-2638/16554" alt="Ir para o posto Posto Extra J Pessoa Lj 2638" title="Ir para o posto Posto Extra J Pessoa Lj 2638"> <span class="text-muted text-left float-left" style=" ">Menor preço:</span><span class="text-success text-right float-right font-weight-normal" style="font-size:18px;">R$ 3.499</span> </a></p>
+                <p class="text-justify hover" style="text-justify:inter-word; min-height: 15px;">  <a href="https://precodoscombustiveis.com.br/pt-br/station/brasil/paraiba/joao-pessoa/district/posto-santa-catarina/1495" alt="Ir para o posto Posto Santa Catarina" title="Ir para o posto Posto Santa Catarina"> <span class="text-muted text-left float-left" style=" ">Maior preço:</span><span class="text-danger text-right float-right font-weight-normal" style="font-size:18px;">R$ 3.700</span> </a></p>
+                        <br />
+        </div>
+    </div>
+                <!-- newgaspass -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1511531556004960"
+     data-ad-slot="5753030534"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
+<style type="text/css">
+	ins.adsbygoogle {
+    	height: 100px;
+	}
+</style>
+
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1511531556004960"
+    });
+    </script>
+            </div>
+
+        </div>
+
+    </div>
+
+<footer class="footer footer-big"   style="background: url(https://precodoscombustiveis.com.br/img/gasbg.jpg); box-shadow: inset 0 0 0 1000px rgba(22,24,37,.9);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+
+        <div class="content">
+            <div class="row">
+                <div class="offset-1 col-10 offset-md-0 col-md-5">
+                    <h5 class="color-white">Contato</h5>
+                    <div class="">
+                        <p class="text-muted">
+                            <b>
+                                contato@precodoscombustiveis.com.br
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="offset-1 col-10 col-md-2">
+                    <h5 class="color-white">Sobre</h5>
+                    <ul class="links-vertical">
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/about" class="text-muted">
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/user-terms" class="text-muted">
+                                Termos de uso
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/privacy-politics" class="text-muted">
+                                Política de Privacidade
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offset-1 col-10 offset-md-0 col-md-2">
+                    <h5 class="color-white">Países</h5>
+                    <ul class="links-vertical">
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/pt-BR/country/brasil/33" class="text-muted">
+                                Brasil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/pt-BR/country/argentina/12" class="text-muted">
+                                Argentina
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/pt-BR/country/chile/46" class="text-muted">
+                                Chile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://precodoscombustiveis.com.br/pt-BR/country/méxico/145" class="text-muted">
+                                México
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offset-1 col-10 offset-md-0 col-md-2">
+                    <h5 class="color-white">Market</h5>
+                    <ul class="links-vertical">
+                        <li>
+                            <a href="https://painel.gaspass.com.br/" class="text-muted" target="_blank">
+                                <span class="text-warning"> Painel</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copyright color-white">
+                <a class="nav-link text-white" href="https://blog.gaspass.com.br/" target="_blank" >
+                    <img style="width:16px;" src="https://precodoscombustiveis.com.br/img/icones__gaspass_iconeRegularBlack-duvida.svg" />
+                    &nbsp;&nbsp;Ajuda
+                </a>
+                <a class="nav-link text-white" rel="tooltip" title="Siga-nos!" data-placement="bottom" href="https://twitter.com/gaspassfuel" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <p class="d-lg-none d-xl-none">Twitter</p>
+                </a>
+                <a class="nav-link text-white" rel="tooltip" title="Curta nossa página!" data-placement="bottom" href="https://facebook.com/gaspassfuel" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                    <p class="d-lg-none d-xl-none">Facebook</p>
+                </a>
+                <a class="nav-link text-white" rel="tooltip" title="Confira!" data-placement="bottom" href="https://www.instagram.com/gaspassfuel" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <p class="d-lg-none d-xl-none">Instagram</p>
+                </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Copyright © <script>document.write(new Date().getFullYear())</script> Preço dos Combustíveis, Todos os direitos reservados.
+        </div>
+    </div>
+</footer>
+
+<script src='https://www.google.com/recaptcha/api.js?render=6LegV4wUAAAAAOLfQ96EgUgV0fxnzeDhwK8UrmMm'></script>
+<script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LegV4wUAAAAAOLfQ96EgUgV0fxnzeDhwK8UrmMm', {action: 'ptbr/city/brasil/paraiba/joaopessoa/1335'}).then(function(token) {
+            // Verify the token on the server.
+        });
+        /*console.log('grecaptcha');
+        console.log(grecaptcha);*/
+    });
+</script>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+<!--   Core JS Files   -->
+
+<script src="https://precodoscombustiveis.com.br/js/core/popper.min.js" type="text/javascript"></script>
+<script src="https://precodoscombustiveis.com.br/js/core/bootstrap.min.js" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="https://precodoscombustiveis.com.br/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://precodoscombustiveis.com.br/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="https://precodoscombustiveis.com.br/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<!--  Google Maps Plugin    -->
+
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://precodoscombustiveis.com.br/js/now-ui-kit.js?v=1.2.0" type="text/javascript"></script>
+
+
+    
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa6umHHsUUEL8J4rj8iqf6z0_YTG6OkjU&libraries=places"></script>
+<script>
+    function setLocale(locale){
+        console.log('asdf');
+        $.ajax({
+                url: "/cookie",
+                method: 'POST',
+                data: { 'name':'locale', 'value':locale },
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(data){
+                    location.reload();
+                }
+            }
+        );
+    }
+
+    var typingTimer;
+    var i = $("#MenuSearchInput");
+
+    $('#searchUseMyLocation').on('click', function(){
+        uselocation();
+    });
+
+    function uselocation(){
+        if ("geolocation" in navigator) {
+            $('#searchUseMyLocationIcon').addClass('fa-spin');
+            navigator.geolocation.getCurrentPosition(function(position) {
+                $.ajax({
+                    url:'location',
+                    method: 'POST',
+                    data:{
+                        lat:position.coords.latitude,
+                        lng:position.coords.longitude
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function(data){
+                        window.location.replace("/my-location");
+                    },
+                    error: function(e){
+                        $('#searchUseMyLocationIcon').addClass('fa-spin');
+                    }
+                });
+                console.log(position.coords.latitude, position.coords.longitude);
+            });
+        } else {
+            alert("Location unavailable");
+        }
+    }
+
+    i.on('blur', function(e){
+        $('#MenuSearchDropdown').fadeOut();
+    });
+
+    i.on('keyup', function (e) {
+        console.log('a');
+        clearTimeout(typingTimer);
+        $('#MenuSearchLoading').hide();
+        if(i.val().length == 0) {
+            $('#MenuSearchDropdown').hide();
+        }else{
+            typingTimer = setTimeout(doneTypingMenu, 500);
+        }
+    });
+
+    function doneTypingMenu() {
+        $('#MenuSearchLoading').fadeIn();
+        $.ajax({
+                url: "/pt-BR/search/autocomplete",
+                dataType: "json",
+                data: {
+                    term: i.val()
+                },
+                success: function( data ) {
+                    $('#MenuSearchDropdown').fadeIn();
+                    $('#MenuSearchMessage').html("").hide();
+
+                    if(data.cidade.length > 0){ $('#autocompleteDivCity').fadeIn(); $('#autocompleteTableCity').html(''); }else{ $('#autocompleteDivCity').hide(); }
+                    $.each(data.cidade, function (i, v) {
+                        $('#autocompleteTableCity').append('<a class="dropdown-item" href="' + v.url + '">' + v.value + '</a>');
+                    });
+
+                    if(data.estado.length > 0){ $('#autocompleteDivState').fadeIn(); $('#autocompleteTableState').html(''); }else{ $('#autocompleteDivState').hide(); }
+                    $.each(data.estado, function(i,v){
+                        $('#autocompleteTableState').append('<a class="dropdown-item" href="'+v.url+'">'+v.value+'</a></td></tr>');
+                    });
+
+                    if(data.pais.length > 0){ $('#autocompleteDivCountry').fadeIn(); $('#autocompleteTableCountry').html(''); }else{ $('#autocompleteDivCountry').hide(); }
+                    $.each(data.pais, function(i,v){
+                        $('#autocompleteTableCountry').append('<a class="dropdown-item" href="'+v.url+'">'+v.value+'</a></td></tr>');
+                    });
+
+                    if(data.cidade.length == 0 && data.estado.length == 0 && data.pais.length == 0){
+                        $('#MenuSearchMessage').html("<b>Nenhum resultado</b>").fadeIn();
+                        //$('#MenuSearchDropdown').hide();
+                    }else{
+                        $('#MenuSearchMessage').html("").hide();
+                        $('#MenuSearchDropdown').fadeIn();
+                    }
+
+                    $('#MenuSearchLoading').fadeOut();
+                },
+                fail: function( data ) {
+                    $('#MenuSearchMessage').html("").hide();
+                    $('#MenuSearchDropdown').hide();
+                    $('#MenuSearchLoading').fadeOut();
+                },
+                error: function( data ) {
+                    $('#MenuSearchMessage').html("").hide();
+                    $('#MenuSearchDropdown').hide();
+                    $('#MenuSearchLoading').fadeOut();
+                },
+            }
+        );
+    }
+
+    function initialize(){
+        console.log('Yasd2');
+        var acInputs = document.getElementById("MenuSearchInput");
+        if(acInputs != null){
+
+            var autocomplete = new google.maps.places.Autocomplete(acInputs);
+            autocomplete.inputId = acInputs.id;
+
+            google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                var place = autocomplete.getPlace();
+                if (!place.geometry) {
+                    // User entered the name of a Place that was not suggested and
+                    // pressed the Enter key, or the Place Details request failed.
+                    window.alert("No details available for input: '" + place.name + "'");
+                    return;
+                }
+                //console.log(place.geometry.location.lat());
+                console.log(place.formatted_address);
+                $.ajax({
+                    url:'/location',
+                    method: 'POST',
+                    data:{
+                        lat:place.geometry.location.lat(),
+                        lng:place.geometry.location.lng(),
+                        address:place.formatted_address
+                    },
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    success: function(data){
+                        window.location.replace("/my-location");
+                    },
+                    error: function(e){
+                        $('#searchUseMyLocationIcon').removeClass('fa-spin');
+                    }
+                });
+            });
+
+        }
+    }
+
+    initialize();
+
+    function toggleMenuSearchBox(){
+        if($(window).scrollTop() > 100){
+            $("html, body").animate({ scrollTop: "0px" });
+            $('#menuSearchBox').show();
+            $('#dowloadAppBox').hide();
+        }else{
+            if($('#menuSearchBox').is(':visible')){
+                $('#menuSearchBox').toggle();
+                $('#dowloadAppBox').toggle();
+            }else{
+                $("html, body").animate({ scrollTop: "0px" });
+                $('#menuSearchBox').toggle();
+                $('#dowloadAppBox').toggle();
+            }
+        }
+    }
+
+
+    var ratefeedback = 4;
+    $("#star_1").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','far fa-star');
+        $("#star_3").attr('class','far fa-star');
+        $("#star_4").attr('class','far fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 1;
+    });
+    $("#star_2").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','far fa-star');
+        $("#star_4").attr('class','far fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 2;
+    });
+    $("#star_3").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','far fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 3;
+    });
+    $("#star_4").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','fas fa-star');
+        $("#star_5").attr('class','far fa-star');
+        ratefeedback = 4;
+    });
+    $("#star_5").click(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','fas fa-star');
+        $("#star_5").attr('class','fas fa-star');
+        ratefeedback = 5;
+    });
+
+
+    $("#exampleInputEmail1").focus(function () {
+
+        $("#exampleInputEmail1").html('');
+        $("#exampleInputEmail1").text('');
+
+    });
+
+    $("#btn_submit_feedback").click(function () {
+        setTimeout(function () {$("#modal_feedback_body").html('<i class="now-ui-icons loader_refresh spin"></i>')},300);
+        // var jqxhr = $.ajax( "https://precodoscombustiveis.com.br/mail/send_feedback/Filipe/filipelopesuser@gmail.com/4/mensagemsobreosite" )
+        var jqxhr = $.ajax( "https://precodoscombustiveis.com.br/mail/send_feedback/Site/"+$('#exampleInputEmail1').val()+"/"+ratefeedback+"/"+$('exampleFormControlTextarea1').val()+"/" )
+            .done(function() {
+                // alert( "success" );
+                setTimeout(function () {$("#modal_feedback_body").html('<p>Agradecemos o seu contato.</p>')},500);
+            })
+            .fail(function() {
+                // alert( "error" );
+                setTimeout(function () {$("#modal_feedback_body").html('<p>Agradecemos o seu contato.</p>')},500);
+            })
+            .always(function() {
+                // alert( "complete" );
+                setTimeout(function () {$("#btn_close_feedback").click()},2000);
+            });
+    });
+
+    $( "#exampleFormControlTextarea1" ).focus(function() {
+        $( "#exampleFormControlTextarea1" ).html('');
+        $( "#exampleFormControlTextarea1" ).text('');
+    });
+
+
+    setTimeout(function () {
+        $("#star_1").attr('class','fas fa-star');
+        $("#star_2").attr('class','fas fa-star');
+        $("#star_3").attr('class','fas fa-star');
+        $("#star_4").attr('class','fas fa-star');
+        $("#star_5").attr('class','far fa-star');
+    },1500);
+
+</script>
+<script>
+
+        function setFuel(fuel, text){
+            $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "/cookie",
+                    method: 'POST',
+                    data: { 'name':'fuel', 'value':fuel },
+                    success: function(data) {
+                        $('#btnFuel').html(text);
+                        location.reload();
+                    }
+                }
+            );
+        }
+
+        $('#btnDistance').on('click', function(e){
+            setOrder("distance", $('#btnDistance').text());
+        });
+
+        $('#btnPrice').on('click', function(e){
+            setOrder("price_value", $('#btnPrice').text());
+        });
+
+        function setOrder(order, text){
+            $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "/cookie",
+                    method: 'POST',
+                    data: { 'name':'order', 'value':order },
+                    success: function(data) {
+                        $('#btnOrder').html(text);
+                        location.reload();
+                    }
+                }
+            );
+        }
+
+        $('#refreshAddress').on('click', uselocation);
+
+        function uselocation(){
+            if ("geolocation" in navigator) {
+                $('#refreshAddressIcon').addClass('fa-spin');
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    $.ajax({
+                        url:'location',
+                        method: 'POST',
+                        data:{
+                            lat:position.coords.latitude,
+                            lng:position.coords.longitude
+                        },
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        },
+                        success: function(data){
+                            window.location.replace("/my-location");
+                        },
+                        error: function(e){
+                            $('#refreshAddressIcon').removeClass('fa-spin');
+                        }
+                    });
+                    console.log(position.coords.latitude, position.coords.longitude);
+                });
+            } else {
+                alert("Location unavailable");
+            }
+        }
+    </script>
+</body>
+
+</html>
