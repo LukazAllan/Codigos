@@ -1,7 +1,7 @@
 from random import randint as rd
 from time import sleep as dly
 from json import load
-import logging
+import logging, emoji
 #from matplotlib import pyplot as plt
 #import numpy as np
 
@@ -22,7 +22,9 @@ logger = logging.getLogger()
 logger.info('cheguei')
 
 A0Z25 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-         'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z']
+         'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z','AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL',
+         'AM', 'AN', 'AO', 'AP', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW', 'AY', 'AZ','BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BK', 'BL',
+         'BM', 'BN', 'BO', 'BP', 'BQ', 'BR', 'BS', 'BT', 'BU', 'BV', 'BW', 'BY', 'BZ']
 data = []
 with open('jogadores.json', encoding='UTF-8') as f:
     p = load(f)
@@ -51,18 +53,20 @@ for partida in range(1):
             data.append(a)
             a = []
         cont = 0
+
+        #Apresentção
         for c in data:
-            #dly(1.25)
+            dly(1.25)
             print(f'Grupo {A0Z25[cont]}:')
             for b in range(len(c)):
-                #dly(0.5)
+                dly(0.5)
                 print(f'{b+1}.{c[b][0]}')
             cont += 1
             print('')
 
 
         pto= lambda x: x[1]
-
+        input()
 
         for a in range(len(data)):
             camp = data[a].copy()
@@ -78,10 +82,10 @@ for partida in range(1):
                     #dly(1.5)
                     if res[0] > res[1]:
                         camp[c][1] += 1
-                        print(f'{camp[c][0]} vence!\n')
+                        print(emoji.emojize(f' {camp[c][0]} vence! \n'))
                     else:
                         camp[c+b+1][1] += 1
-                        print(f'{camp[c+b+1][0]} vence!\n')
+                        print(emoji.emojize(f' {camp[c+b+1][0]} vence! \n'))
                     #dly(1)
             camp.sort(key=pto, reverse=True)
             data[a] = camp.copy()
@@ -114,16 +118,19 @@ for partida in range(1):
                         op = camp[c+1:len(camp)].copy()
                         for b in range(len(op)):
                             res = [0, 0]
-                            print(f'{camp[c][0]} vs. {op[b][0]}')
+                            print(emoji.emojize(f'{camp[c][0]} vs. {op[b][0]}'))
                             while res[0] == res[1]:
                                 res = [rd(0, 100), rd(0, 100)]
+                                if res[0] == res[1]:
+                                    print("Empate! Jogando de novo!")
+                                    dly(3)
                             #dly(3)
                             if res[0] > res[1]:
                                 camp[c][1] += 1
-                                print(f'{camp[c][0]} vence!\n')
+                                print(emoji.emojize(f'{camp[c][0]} vence!\n'))
                             else:
                                 camp[c+b+1][1] += 1
-                                print(f'{camp[c+b+1][0]} vence!\n')
+                                print(emoji.emojize(f'{camp[c+b+1][0]} vence!\n'))
                             #dly(1)
                     camp.sort(key=pto, reverse=True)
                     logger.info(f"{camp} - 2")
@@ -154,12 +161,14 @@ for partida in range(1):
             #dly(1)
         for x in range(len(data)):
             data[x].sort(key=pto, reverse=True)
+        
+        print("Para a próxima fase: ")
         for c in range(len(data)):
-            #dly(1)
-            print(f'Vencedores Grupo {A0Z25[c]}')
+            dly(1)
+            print(emoji.emojize(f' :crown: Grupo {A0Z25[c]} :crown:'))
             for b in range(2):
-                #dly(1.5)
-                print(f'{b+1}. {data[c][b][0]} {data[c][b][1]}')
+                dly(1.5)
+                print(emoji.emojize(f'{b+1}° {data[c][b][0]}'))
             print('')
 
         metdogp = int((len(data)/2))
@@ -181,8 +190,8 @@ for partida in range(1):
                 print(f'{len(data)}ᵃ de Final')
                 pass
             for c in range(len(data)):
-                #dly(1)
-                print(f'{c+1}°Jogo: {data[c][0][0]} vs. {data[c][1][0]}')
+                dly(1)
+                print(emoji.emojize(f'{c+1}°Jogo: {data[c][0][0]} vs. {data[c][1][0]}'))
                 print('')
             # apresentação
             for a in range(len(data)):
@@ -193,15 +202,18 @@ for partida in range(1):
                         res = [0, 0]
                         print(f'{camp[c][0]} vs. {op[b][0]}')
                         while res[0] == res[1]:
-                            res = [rd(0, 100), rd(0, 100)]
-                        #dly(1.5)
+                            res = [rd(0, 200), rd(0, 200)]
+                            if res[0] == res[1]:
+                                print("Empate! Jogando de novo!")
+                                dly(3)
+                        dly(1.5)
                         if res[0] > res[1]:
                             camp[c][1] += 1
                             print(f'{camp[c][0]} vence!\n')
                         else:
                             camp[c+b+1][1] += 1
                             print(f'{camp[c+b+1][0]} vence!\n')
-                        #dly(1)
+                        dly(1)
                 camp.sort(key=pto, reverse=True)
                 data[a] = camp.copy()
                 print('')
@@ -217,7 +229,7 @@ for partida in range(1):
                 qrdd.append([[data[x][0][0], 0, data[x][0][2]], [data[metdogp+x][0][0], 0, data[metdogp+x][0][2]]])
             data = qrdd.copy()
         data[0].sort(key=pto, reverse=True)
-        print(f'Ganhador: {data[0][0][0]} Parabéns!')
+        print(emoji.emojize(f'Ganhador: :crown:{data[0][0][0]}:crown: Parabéns!'))
         ganhadores.append(data[0][0][0])
         if data[0][0][2] == 'M':
             pass

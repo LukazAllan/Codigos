@@ -6,7 +6,7 @@ data =[]
 p=[['Allan',0], ['Bruno',0], ['Carlos',0], ['Diego',0],
     ['Elton',0], ['Fabiano',0], ['Nicolas',0], ['Miguel',0],
     ['Vitor',0], ['Pedro',0], ['Gustavo',0], ['Guilherme',0],
-    ['Eduardo',0], ['Thiago',0], ['Rodrigo',0], ['Igor',0],
+    ['Eduardo',0], ['Thiago',0], ['Araújo',0], ['Igor',0],
     ['Júlio',0], ['Heitor',0], ['Luiz',0], ['Rafael',0],
     ['Davi',0],['Luan',0], ['Yuri',0],['Paulo',0],
    ['Henrique',0], ['Celso',0], ['Daniel',0], ['Caio',0],
