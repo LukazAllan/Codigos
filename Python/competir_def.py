@@ -70,26 +70,24 @@ def show(data:list):
 def tatakau(data:list, assistido:bool=True):
     for a in range(len(data)):
         camp = data[a].copy()
-        print(f'Disputas Grupo {A0Z25[a]}')
+        print(f'Disputas Grupo {A0Z25[a]}' if assistido else '')
         #info(f"Grupo {A0Z25[a]}")
         for c in range(len(camp)):
             op = camp[c+1:len(camp)].copy()
             for b in range(len(op)):
                 res = [0, 0]
-                if assistido:
-                    print(f'{camp[c][0]} vs. {op[b][0]}')
+                print(f'{camp[c][0]} vs. {op[b][0]}' if assistido else '')
                 while res[0] == res[1]:
                     res = [rd(min_range, max_range), rd(min_range, max_range)]
                 if assistido:
                     dly(1.5)
                 if res[0] > res[1]:
                     camp[c][1] += 1
-                    if assistido:
-                        print(emoji.emojize(f' {camp[c][0]} vence! \n'))
+                    print(emoji.emojize(f' {camp[c][0]} vence! \n') if assistido else '')
                 else:
                     camp[c+b+1][1] += 1
                     if assistido:
-                        print(emoji.emojize(f' {camp[c+b+1][0]} vence! \n'))
+                        print(emoji.emojize(f' {camp[c+b+1][0]} vence! \n') if assistido else '')
                 if assistido:
                     dly(1)
         camp.sort(key=pto, reverse=True)
@@ -117,16 +115,14 @@ def tatakau(data:list, assistido:bool=True):
                     camp = data[a][1:3].copy()
                 for x in range(len(camp)):
                     camp[x][1] = 0
-                if assistido:
-                    print(f'Desempate {desempate} Grupo {A0Z25[a]}')
+                print(f'Desempate {desempate} Grupo {A0Z25[a]}' if assistido else '')
                 #info(f'Desempate {desempate}')
                 #logger.info(f"{camp} - 1")
                 for c in range(len(camp)):
                     op = camp[c+1:len(camp)].copy()
                     for b in range(len(op)):
                         res = [0, 0]
-                        if assistido:
-                            print(emoji.emojize(f'{camp[c][0]} vs. {op[b][0]}'))
+                        print(emoji.emojize(f'{camp[c][0]} vs. {op[b][0]}') if assistido else '')
                         while res[0] == res[1]:
                             res = [rd(min_range, max_range), rd(min_range, max_range)]
                             if res[0] == res[1]:
@@ -137,12 +133,10 @@ def tatakau(data:list, assistido:bool=True):
                             dly(3)
                         if res[0] > res[1]:
                             camp[c][1] += 1
-                            if assistido:
-                                print(emoji.emojize(f'{camp[c][0]} vence!\n'))
+                            print(emoji.emojize(f'{camp[c][0]} vence!\n') if assistido else '')
                         else:
                             camp[c+b+1][1] += 1
-                            if assistido:
-                                print(emoji.emojize(f'{camp[c+b+1][0]} vence!\n'))
+                            print(emoji.emojize(f'{camp[c+b+1][0]} vence!\n') if assistido else '')
                         if assistido:
                             dly(1)
                 camp.sort(key=pto, reverse=True)
