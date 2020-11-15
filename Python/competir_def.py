@@ -8,7 +8,8 @@ pto = lambda x: x[1]
 
 
 A0Z25 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
-         'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 'Z','AA', 'AB', 'AC', 'AD', 'AE', 'AF', 'AG', 'AH', 'AI', 'AJ', 'AK', 'AL',
+         'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'Y', 
+         'Z','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
          'AM', 'AN', 'AO', 'AP', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW', 'AY', 'AZ','BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BK', 'BL',
          'BM', 'BN', 'BO', 'BP', 'BQ', 'BR', 'BS', 'BT', 'BU', 'BV', 'BW', 'BY', 'BZ']
 
@@ -43,12 +44,27 @@ def show(data:list):
     first = len(data[0])
     if first != 2:
         cont = 0
-        for c in data:
+        #for c in data:
+            #dly(1.25)
+            #print(f'Grupo {A0Z25[cont]}:')
+            #for b in range(len(c)):
+                #dly(0.5)
+                #print(f'{b+1}.{c[b][0]}')
+            #cont += 1
+            #print('')
+        cont = 0
+        meio = int(len(data)/2)
+        blocos = 8
+        for c in range(0, len(data), blocos):
             dly(1.25)
-            print(f'Grupo {A0Z25[cont]}:')
-            for b in range(len(c)):
+            for a in range(blocos):
+                print(f'  Grupo {A0Z25[c+a]}:' if a == 0 else f'     Grupo {A0Z25[c + a]}:', end='')
+            print('')
+            for b in range(len(data[c])):
                 dly(0.5)
-                print(f'{b+1}.{c[b][0]}')
+                for oth in range(blocos):
+                    print(f'{b+1}.{data[c + oth][b][0]:<10}', end=' ')
+                print('')
             cont += 1
             print('')
     else:

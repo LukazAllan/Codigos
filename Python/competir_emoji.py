@@ -11,14 +11,14 @@ import logging, emoji
 #larg = 0.25
 #y = [[],[]]
 
-with open("compeca.log", "w", encoding="UTF-8") as f:
+with open("Python/compeca.log", "w", encoding="UTF-8") as f:
     f.write('cheguei\n')
     pass
 def info(msg):
-    with open("compeca.log", "a", encoding="UTF-8") as f:
+    with open("Python/compeca.log", "a", encoding="UTF-8") as f:
         f.write(f'{msg}\n')
         pass
-logging.basicConfig(filename="competir.log", filemode="w", level = logging.DEBUG)
+logging.basicConfig(filename="Python/competir.log", filemode="w", level = logging.DEBUG)
 logger = logging.getLogger()
 logger.info('cheguei')
 
@@ -27,7 +27,7 @@ A0Z25 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
          'AM', 'AN', 'AO', 'AP', 'AQ', 'AR', 'AS', 'AT', 'AU', 'AV', 'AW', 'AY', 'AZ','BA', 'BB', 'BC', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BK', 'BL',
          'BM', 'BN', 'BO', 'BP', 'BQ', 'BR', 'BS', 'BT', 'BU', 'BV', 'BW', 'BY', 'BZ']
 data = []
-with open('jgadores.json', encoding='UTF-8') as f:
+with open('Python/jgadores.json', encoding='UTF-8') as f:
     p = load(f)
 ganhadores=[]
 min_range = 0
@@ -41,18 +41,23 @@ show(data)
 pto = lambda x: x[1]
 input()
 
-data = tatakau(data, False)
+data = tatakau(data) # True Assistid
 
 for x in range(len(data)):
     data[x].sort(key=pto, reverse=True)
 
+blocos = 8
 print("Para a próxima fase: ")
-for c in range(len(data)):
+for c in range(0, len(data), blocos):
     dly(1)
-    print(emoji.emojize(f' :crown: Grupo {A0Z25[c]} :crown:'))
+    for a in range(blocos):
+        print(emoji.emojize(f':crown: Grupo {A0Z25[c+a]} :crown:'), end=' ')
+    print('')
     for b in range(2):
         dly(1.5)
-        print(emoji.emojize(f'{b+1}° {data[c][b][0]}'))
+        for oth in range(blocos):
+            print(emoji.emojize(f'{b+1}° {data[c+oth][b][0]:.<10}'), end=' ')
+        print('')
     print('')
 
 metdogp = int((len(data)/2))
